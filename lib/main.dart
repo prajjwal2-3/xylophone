@@ -4,14 +4,11 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
-
   @override
   State<MyApp> createState() => _MyAppState();
 }
-
 class _MyAppState extends State<MyApp> {
 void playsound(int s){
   final AudioPlayer player = AudioPlayer();
@@ -29,8 +26,6 @@ Expanded buildkey({Color color= Colors.black, int sound=1}){
           child: Text('.'),),
         );
 }
-
-
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
@@ -47,13 +42,6 @@ Expanded buildkey({Color color= Colors.black, int sound=1}){
           buildkey(color: Colors.teal, sound: 5),
           buildkey(color: Colors.blue, sound: 6),
           buildkey(color: Colors.purple, sound: 7),
-
-
-
-
-
-
-
           ],
         )),
       ),
